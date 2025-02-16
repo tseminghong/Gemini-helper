@@ -1,0 +1,23 @@
+// manifest.json - Change names and descriptions
+{
+    "manifest_version": 3,
+    "name": "Gemini Text Helper",
+    "version": "1.0",
+    "description": "Use Gemini to extend or simplify selected text.",
+    "permissions": [
+      "contextMenus",
+      "activeTab",
+      "storage",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": false
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
