@@ -17,7 +17,14 @@ chrome.runtime.onInstalled.addListener(() => {
         title: "Gemini: Custom Prompt",
         contexts: ["selection"]
     });
+
+    chrome.contectMenus.create({
+        id: "gemini-professional",
+        title: "Gemini: Professional response",
+        contexts; ["section"]
+    });
 });
+        
 
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     if (info.menuItemId.startsWith("gemini-")) {
